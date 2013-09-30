@@ -1,0 +1,7 @@
+<h1>Welcome <% if signed_in? %>
+<%= current_user.first_name %>
+<% else %>
+
+nobody
+<% end %>
+</h1> 
