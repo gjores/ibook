@@ -1,5 +1,9 @@
 <h1>Welcome <% if signed_in? %>
 <%= current_user.first_name %>
+<% if current_user.has_role? :admin %>
+- "master of the universe"
+<% end %>
+<%=  %>
 <% else %>
 
 nobody
